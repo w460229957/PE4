@@ -56,21 +56,20 @@ vector<int> GetPlayerChoice(){
     vector<int> input = {0,0};
     cout<<"What is your location to play? row .(Integers, please)"<<endl;
     cin >>x;
-    cout<<"1"<<endl;
     input[0] = x;
-    cout<<"1"<<endl;
     cout<<"What is your location to play? Column .(Integers, please)"<<endl;
     cin >>y;
     input[1] = y;
-    if (input[0] == 9)
-    {
-        terminate();
-    }
-    
     return input;
 }
 
-Board PlaceMarker(Board board, vector<int> inputs, int flag){
+Board PlaceMarker(Board board, vector<int> inputs, int &flag){
+    if (flag == 9)
+    {
+        cout<<"You decided to leave the game"<<endl;
+        return board;
+    }
+    
     for (int i = 0; i < 3; i++)
     {
         /* code */
@@ -96,12 +95,24 @@ Board PlaceMarker(Board board, vector<int> inputs, int flag){
 
 int main(){
     int flag = 0;
+    int turn = 0;
     vector<int> input;
     Board b1 = CreateBoard();
-    while (flag != 9)
+    while (flag != 9 && turn != 9)
     {
+        if (turn % 2 == 0)
+        {
+            flag = 0;
+        }
+        else
+        {
+            flag = 1;
+        }
         DisplayBoard(b1);
         input = GetPlayerChoice();
         b1 = PlaceMarker(b1, input, flag);
+        turn ++;
     }
+    cout<<"Game is over. The result is "<<endl;
+    DisplayBoard(b1);
 }

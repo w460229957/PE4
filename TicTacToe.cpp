@@ -27,6 +27,7 @@ void DisplayBoard(Board board){
     for (int i = 0; i < 3; i++)
     {
         /* code */
+        cout<<"-----------"<<endl;
         for (int j = 0; j < 3; j++)
         {
             /* code */
@@ -52,13 +53,20 @@ void DisplayBoard(Board board){
 vector<int> GetPlayerChoice(){
     int x;
     int y;
-    vector<int> input;
+    vector<int> input = {0,0};
     cout<<"What is your location to play? row .(Integers, please)"<<endl;
     cin >>x;
+    cout<<"1"<<endl;
     input[0] = x;
+    cout<<"1"<<endl;
     cout<<"What is your location to play? Column .(Integers, please)"<<endl;
     cin >>y;
     input[1] = y;
+    if (input[0] == 9)
+    {
+        terminate();
+    }
+    
     return input;
 }
 
@@ -68,7 +76,7 @@ Board PlaceMarker(Board board, vector<int> inputs, int flag){
         /* code */
         for (int j = 0; j < 3; j++)
         {
-            if (board.arr_[i][j] == inputs[0] && board.arr_[i][j] == inputs[1])
+            if (i == inputs[0] && j == inputs[1])
             {
                 if (flag == 0)
                 {
@@ -83,10 +91,17 @@ Board PlaceMarker(Board board, vector<int> inputs, int flag){
         }
         
     }
-    
+    return board;
 }
 
 int main(){
+    int flag = 0;
+    vector<int> input;
     Board b1 = CreateBoard();
-    DisplayBoard(b1);
+    while (flag != 9)
+    {
+        DisplayBoard(b1);
+        input = GetPlayerChoice();
+        b1 = PlaceMarker(b1, input, flag);
+    }
 }

@@ -50,13 +50,19 @@ void DisplayBoard(Board board){
     
 }
 
-Board PlaceMarker(Board board, vector<int> inputs, int flag){
+Board PlaceMarker(Board board, vector<int> inputs, int &flag){
+    if (flag == 9)
+    {
+        cout<<"You decided to leave the game"<<endl;
+        return board;
+    }
+    
     for (int i = 0; i < 3; i++)
     {
         /* code */
         for (int j = 0; j < 3; j++)
         {
-            if (board.arr_[i][j] == inputs[0] && board.arr_[i][j] == inputs[1])
+            if (i == inputs[0] && j == inputs[1])
             {
                 if (flag == 0)
                 {
@@ -71,7 +77,7 @@ Board PlaceMarker(Board board, vector<int> inputs, int flag){
         }
         
     }
-    
+    return board;
 }
 
 int main(){

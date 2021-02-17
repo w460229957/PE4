@@ -41,7 +41,6 @@ void DisplayBoard(Board board){
             }
             else if(board.arr_[i][j] == 2)
             {
-                cout<<"K";
             }
         }
         cout<<"||"<<endl;

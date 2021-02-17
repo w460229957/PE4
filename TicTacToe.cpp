@@ -53,13 +53,14 @@ void DisplayBoard(Board board){
 vector<int> GetPlayerChoice(){
     int x;
     int y;
-    vector<int> input;
+    vector<int> input = {0,0};
     cout<<"What is your location to play? row .(Integers, please)"<<endl;
     cin >>x;
     input[0] = x;
     cout<<"What is your location to play? Column .(Integers, please)"<<endl;
     cin >>y;
-    input[1] = y;    
+    input[1] = y;
+    return input;
 }
 
 int main(){

@@ -1,5 +1,6 @@
 #include <cstdio>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -37,11 +38,11 @@ void DisplayBoard(Board board){
             }
             else if(board.arr_[i][j] == 1)
             {
-                cout<<"Y";
+                cout<<"O";
             }
             else if(board.arr_[i][j] == 2)
             {
-                cout<<"K";
+                cout<<"X";
             }
         }
         cout<<"||"<<endl;
@@ -49,6 +50,14 @@ void DisplayBoard(Board board){
     
 }
 
+vector<int> GetPlayerChoice(){
+    int x;
+    int y;
+    cout<<"What is your location to play? row .(Integers, please)"<<endl;
+    cin >>x;
+    cout<<"What is your location to play? Column .(Integers, please)"<<endl;
+    cin >>y;    
+}
 int main(){
     Board b1 = CreateBoard();
     DisplayBoard(b1);

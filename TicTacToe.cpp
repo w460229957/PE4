@@ -22,7 +22,7 @@ Board CreateBoard(){
     return b1;
 }
 
-void Display(Board board){
+void DisplayBoard(Board board){
     for (int i = 0; i < 3; i++)
     {
         /* code */
@@ -51,5 +51,5 @@ void Display(Board board){
 
 int main(){
     Board b1 = CreateBoard();
-    Display(b1);
+    DisplayBoard(b1);
 }

@@ -49,6 +49,18 @@ void DisplayBoard(Board board){
     }
     
 }
+vector<int> GetPlayerChoice(){
+    int x;
+    int y;
+    vector<int> input;
+    cout<<"What is your location to play? row .(Integers, please)"<<endl;
+    cin >>x;
+    input[0] = x;
+    cout<<"What is your location to play? Column .(Integers, please)"<<endl;
+    cin >>y;
+    input[1] = y;
+    return input;
+}
 
 Board PlaceMarker(Board board, vector<int> inputs, int flag){
     for (int i = 0; i < 3; i++)

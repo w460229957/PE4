@@ -1,0 +1,97 @@
+-----------
+|| || || ||
+-----------
+|| || || ||
+-----------
+|| || || ||
+What is your location to play? row .(Integers, please)
+0
+What is your location to play? Column .(Integers, please)
+0
+-----------
+||O|| || ||
+-----------
+|| || || ||
+-----------
+|| || || ||
+What is your location to play? row .(Integers, please)
+0 
+What is your location to play? Column .(Integers, please)
+1
+-----------
+||O||X|| ||
+-----------
+|| || || ||
+-----------
+|| || || ||
+What is your location to play? row .(Integers, please)
+0
+What is your location to play? Column .(Integers, please)
+2
+-----------
+||O||X||O||
+-----------
+|| || || ||
+-----------
+|| || || ||
+What is your location to play? row .(Integers, please)
+1 
+What is your location to play? Column .(Integers, please)
+0
+-----------
+||O||X||O||
+-----------
+||X|| || ||
+-----------
+|| || || ||
+What is your location to play? row .(Integers, please)
+1
+What is your location to play? Column .(Integers, please)
+2
+-----------
+||O||X||O||
+-----------
+||X|| ||O||
+-----------
+|| || || ||
+What is your location to play? row .(Integers, please)
+1
+What is your location to play? Column .(Integers, please)
+1
+-----------
+||O||X||O||
+-----------
+||X||X||O||
+-----------
+|| || || ||
+What is your location to play? row .(Integers, please)
+2
+What is your location to play? Column .(Integers, please)
+0
+-----------
+||O||X||O||
+-----------
+||X||X||O||
+-----------
+||O|| || ||
+What is your location to play? row .(Integers, please)
+2
+What is your location to play? Column .(Integers, please)
+1
+-----------
+||O||X||O||
+-----------
+||X||X||O||
+-----------
+||O||X|| ||
+What is your location to play? row .(Integers, please)
+2
+What is your location to play? Column .(Integers, please)
+2
+Game is over. The result is 
+-----------
+||O||X||O||
+-----------
+||X||X||O||
+-----------
+||O||X||O||

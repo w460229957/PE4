@@ -37,11 +37,11 @@ void DisplayBoard(Board board){
             }
             else if(board.arr_[i][j] == 1)
             {
-                cout<<"X";
+                cout<<"Y";
             }
             else if(board.arr_[i][j] == 2)
             {
-                cout<<"O";
+                cout<<"K";
             }
         }
         cout<<"||"<<endl;

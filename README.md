@@ -1,8 +1,8 @@
 # PE4
 Tic tac games
-I couldn't find a person to work with me. So I decided to register another account for thsi programming exercies.
+I couldn't find a person to work with me. So I decided to register another account for this programming exercies.
 P1:Zhengyuan Zhang
-P2:Zhengyuan Zhang
+P2:Zhengyuan Zhang(Fakezhang521)
 
 Addition problems:Because I am working solely, I haven't met merge conflicts. However, I know how to solve merge conflicts. The basci step is to remove those additioanl information like "Head>>>>>" and to choose the part of code I want to keep.
 
